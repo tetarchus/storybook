@@ -16,6 +16,7 @@ import { scrollToElement } from './utils';
 const { document, window: globalWindow } = global;
 
 export interface DocsContainerProps<TFramework extends AnyFramework = AnyFramework> {
+  children?: React.ReactNode,
   context: DocsContextProps<TFramework>;
 }
 
